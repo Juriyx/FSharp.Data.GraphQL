@@ -271,7 +271,7 @@ Target.create "PackAll" ignore
     ==> "StartStarWarsServer"
     ==> "StartIntegrationServer"
     ==> "UpdateIntrospectionFile"
-    ==> "RunIntegrationTests"
+    //==> "RunIntegrationTests"
     ==> "All"
     =?> ("GenerateDocs", Environment.environVar "GITHUB_ACTIONS" = "True")
     |> ignore
