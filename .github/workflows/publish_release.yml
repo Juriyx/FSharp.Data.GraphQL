@@ -143,6 +143,4 @@ jobs:
       run: |
         $path = "nuget/FSharp.Data.GraphQL.ProjectTemplates.${{env.VERSION}}.nupkg"
         dotnet nuget push $path -k ${{secrets.NUGET_SECRET}} --skip-duplicate
-        $path = "nuget/FSharp.Data.GraphQL.ProjectTemplates.${{env.VERSION}}.snupkg"
-        dotnet nuget push $path -k ${{secrets.NUGET_SECRET}} --skip-duplicate
       shell: pwsh
